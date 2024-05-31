@@ -1,0 +1,266 @@
+body{
+    margin:0 auto;
+    font-family: "Quicksand", sans-serif;
+}
+/*MENU*/
+.menu{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content:space-around;
+    box-shadow: 0 5px 15px rgb(204, 204, 204);
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+.logo img{
+    height: 70px;
+}
+.atalhos a{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    padding: 0 18px;
+    flex-direction: row;
+}
+.atalhos a:hover{
+    box-shadow: 0 0 6px 0 rgb(204, 204, 204);
+    background-image:linear-gradient(180deg, #28F0C5, #035C49);
+
+    color: white;
+    border-radius: 20px;
+    padding:5px 12px;
+    font-weight: bold;
+}
+
+/*SEÇÃO 2 - BANNER*/
+.conteiner-banner{
+    background-image: url(assets/serra.jpg);
+    height: 800px;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-banner div{
+    background-color:#02362b94;
+
+    border-radius: 20px;
+    padding: 30px 60px;
+    max-width: 550px;
+    box-shadow: 0 0 6px 0 #002e2494;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conteiner-banner h1{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+.conteiner-banner p{
+    font-size: 24px;
+    font-weight: normal;
+    color:rgb(233, 233, 233);
+    text-align: center;
+    margin-top: 0;
+}
+
+/*SEÇÃO 3 - QUARTOS*/
+.conteiner-quartos{
+    max-height: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+.conteiner-mensagem{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+.conteiner-mensagem h2{
+    font-size: 35px;
+    color:#035C49;
+}
+.conteiner-mensagem p{
+    font-size: 18px;
+    color: gray;
+    margin: 10px 40px;
+}
+
+.box-quartos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    flex-shrink: 1;
+    margin: 0 28px;
+    padding-bottom: 20px;
+}
+.box-quartos .box-1,.box-quartos .box-2,.box-quartos .box-3{
+    border-radius: 10px;
+    height: 260px;
+    width: 350px;
+    
+    background-color: rgb(238, 238, 238);
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.473);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+
+    margin: 20px 30px;
+    
+}
+.box-quartos img{
+    width: 350px;
+    max-height: 200px;
+    border-radius: 10px;
+}
+.box-quartos a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #035C49;
+    padding-bottom: 20px;
+}
+.hov:hover{
+    color:white;
+    background-color: rgb(212, 212, 212)
+}
+
+/*SEÇÃO 4 - rota*/
+
+.conteiner-rota{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    position: relative;
+}
+.conteiner-rota::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    top:25px;
+
+    background-image: url(assets/fundo\ montanhas.png);
+    background-position:top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+.linha{
+    background-color: #035C49;
+    height: 1px;
+    width: 90%;
+    margin: 40px auto 0px auto;
+}
+iframe{
+    margin:0 auto;
+    width: 80%;
+    box-shadow: 5px 5px 15px gray;
+}
+
+/*SEÇÃO 5 - sobre*/
+.conteiner-sobre{
+    height: auto;
+    width: 100%;
+}
+.box-sobre{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    padding-bottom: 60px;
+}
+.box-sobre img{
+    width: 130px;
+    max-height: 100px;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    width: 250px;
+    justify-content: center;
+}
+.texto h3{
+    margin: 8px;
+    color:#035C49
+}
+.box-sobre .box-1,
+.box-sobre .box-2,
+.box-sobre .box-3,
+.box-sobre .box-4{
+    border-radius: 10px;
+    height: 150px;
+    width: 400px;
+    
+    background-color: rgb(212, 212, 212);
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.473);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 1;
+
+    padding:0px 20px;
+    margin: 20px 30px;
+}
+
+/*SEÇÃO 6 - rodape*/
+.conteiner-contatos{
+    background-image:linear-gradient(180deg, #28F0C5, #035C49);
+
+    color: white;
+    height: 100px;
+    padding: 20px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex:1 1 auto;
+
+    box-shadow: -10px 0 15px 15px #035c497c;
+}
+.conteiner-contatos img{
+    height: 30px;
+    padding: 0 5px;
+}
+.conteiner-contatos a{
+    color:white;
+    text-decoration: none;
+}
+.conteiner-contatos div{
+    min-width:150px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dados-programador{
+    font-size: 12px;
+    background-color: #035C49;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding:10px 0px
+}

@@ -1,0 +1,72 @@
+body{
+    margin:0 auto;
+    font-family: "Quicksand", sans-serif;
+}
+/*MENU*/
+.menu{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content:space-around;
+    box-shadow: 0 5px 15px rgb(204, 204, 204);
+    align-items: center;
+}
+.logo img{
+    height: 70px;
+}
+.atalhos a{
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    padding: 0 18px;
+    flex-direction: row;
+}
+.atalhos a:hover{
+    box-shadow: 0 0 6px 0 rgb(204, 204, 204);
+    background-image:linear-gradient(180deg, #28F0C5, #035C49);
+
+    color: white;
+    border-radius: 20px;
+    padding:5px 12px;
+    font-weight: bold;
+}
+
+/*SEÇÃO 2 - BANNER*/
+.conteiner-banner{
+    background-image: url(assets/serra.jpg);
+    height: 800px;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner-banner div{
+    background-color:#02362b94;
+
+    border-radius: 20px;
+    padding: 30px 60px;
+    width: 550px;
+    box-shadow: 0 0 6px 0 #002e2494;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conteiner-banner h1{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+.conteiner-banner p{
+    font-size: 24px;
+    font-weight: normal;
+    color:rgb(233, 233, 233);
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
